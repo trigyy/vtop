@@ -1,0 +1,7 @@
+/* Injected at document_start — hides CGPA section before it ever renders */
+
+[id*="cgpa" i], [id*="CGPA"],
+[id*="creditStatus" i],
+[class*="cgpa" i], [class*="CGPA"] {
+  display: none !important;
+}
