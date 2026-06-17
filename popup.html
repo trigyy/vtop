@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VTOP CGPA Hider</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 220px; font-family: system-ui, sans-serif; background: #1a1a1a; color: #e0e0e0; padding: 12px; }
+    .title { font-size: 13px; font-weight: 600; margin-bottom: 10px; color: #fff; }
+    .btn { display: block; width: 100%; padding: 8px 12px; margin-bottom: 6px; border: none; border-radius: 6px; font-size: 13px; font-family: inherit; cursor: pointer; text-align: left; background: #2a2a2a; color: #ccc; transition: background 0.15s; }
+    .btn:hover { background: #333; }
+    .btn.active { background: #4f46e5; color: #fff; }
+    .edit-box { display: none; margin-top: 6px; }
+    .edit-box.show { display: block; }
+    .edit-box input { width: 100%; padding: 8px; border: 1px solid #333; border-radius: 6px; background: #222; color: #fff; font-size: 14px; font-family: inherit; outline: none; margin-bottom: 6px; }
+    .edit-box input:focus { border-color: #4f46e5; }
+    .apply-btn { width: 100%; padding: 8px; border: none; border-radius: 6px; background: #4f46e5; color: #fff; font-size: 12px; font-family: inherit; cursor: pointer; }
+    .apply-btn:hover { background: #4338ca; }
+    .apply-btn.done { background: #16a34a; }
+  </style>
+</head>
+<body>
+  <div class="title">CGPA Hider</div>
+  <button class="btn active" id="btn-hide">🚫 Hide</button>
+  <button class="btn" id="btn-edit">✏️ Edit</button>
+  <div class="edit-box" id="edit-box">
+    <input type="text" id="cgpa-value" placeholder="Enter CGPA (e.g. 9.50)" maxlength="5">
+    <button class="apply-btn" id="apply-btn">Apply</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
